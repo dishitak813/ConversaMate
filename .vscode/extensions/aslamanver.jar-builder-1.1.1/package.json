@@ -1,0 +1,59 @@
+{
+	"name": "jar-builder",
+	"displayName": "JAR Builder",
+	"description": "Build JAR files from JAVA class or .java files",
+	"version": "1.1.1",
+	"publisher": "aslamanver",
+	"repository": "https://github.com/aslamanver/jar-builder",
+	"license": "MIT",
+	"icon": "resources/icon.png",
+	"keywords": [
+		"jar",
+		"java",
+		"jar-builder"
+	],
+	"engines": {
+		"vscode": "^1.38.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.buildjar"
+	],
+	"main": "src/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.buildjar",
+				"title": "Build JAR"
+			}
+		]
+	},
+	"scripts": {
+		"test": "mocha test/tests.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.38.0",
+		"eslint": "^5.13.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.2.0"
+	},
+	"__metadata": {
+		"id": "02967f82-ede1-4ff0-ab2b-f0683146b7c0",
+		"publisherId": "927d2445-74ed-4de8-a8fb-67bf80ec7a8a",
+		"publisherDisplayName": "Tillion",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1675155929524,
+		"preRelease": false
+	}
+}

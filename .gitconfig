@@ -1,0 +1,12 @@
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	name = Dishita
+	email = dishita813@gmail.com
+[core]
+	editor = \"C:\\Users\\HP\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+[safe]
+	directory = C:/xampp/htdocs/PGlife-master
